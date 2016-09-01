@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Pos-system-with-Raspberry-Pi by kanugan</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/kanugan/POS-system-with-Raspberry-Pi">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Pos-system-with-Raspberry-Pi</h1>
+            <h2>A python based restaurant POS system using only Raspberry Pis. </h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/kanugan/POS-system-with-Raspberry-Pi/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/kanugan/POS-system-with-Raspberry-Pi/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h3>
+<a id="restaurant-pos-system-using-raspberry-pis" class="anchor" href="#restaurant-pos-system-using-raspberry-pis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Restaurant POS system using Raspberry Pis</h3>
+
+<p>(<a href="https://github.com/pasala1729" class="user-mention">@pasala1729</a>) , (<a href="https://github.com/kanugan" class="user-mention">@kanugan</a>)</p>
+
+<hr>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Introduction:</strong>
+</h2>
+
+<p>The motivation behind this project was to create a low cost and efficient point of sale (POS) system which can be used in restaurants to offer customers an option to view menu, order items, receive bill on a touchscreen device on their tables. The system also displays the current order, table number, time of the order to another device used by the chef/cook in the kitchen. With this method, we hoped there will be less errors in order placement and getting orders to the right tables.  </p>
+
+<h2>
+<a id="operation" class="anchor" href="#operation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Operation:</strong>
+</h2>
+
+<p>The whole system consists of two Raspberry Pis: One to place an order, the other to display order details to the chef and store the details (essentially a server). The GUI on both the Pi s are implemented using tkinter module of python. All other modules used are imported from python as well.</p>
+
+<p>With the current system, we have successfully implemented features such as displaying multiple menu items (Drinks and Food) along with options to choose quantity, spice level &amp; cooked level. The ability to store order information is set in place through the database. This can be further be used to suggest recommended dishes to returning customers automatically. </p>
+
+<h2>
+<a id="hardware-used" class="anchor" href="#hardware-used" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Hardware Used:</strong>
+</h2>
+
+<p><em>Kitchen display system</em> =&gt;
+LCD Display – 7 inch 800*480 touchscreen, Raspberry Pi with HDMI cable &amp; Wifi Dongle </p>
+
+<p><em>Order placement system</em> =&gt;
+Linux machine – to simulate another Raspberry Pi </p>
+
+<h2>
+<a id="further-work" class="anchor" href="#further-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Further Work:</strong>
+</h2>
+
+<p>The GUI created using tkinter is difficult to implement multiple menu pages, so an alternate method using CSS and html pages might be used for further improvement. With our system as a base, one can other functionalities such as pay using card swipe attached to the display, show offers and promotions, receive audio feedback, option to register as a member and store order details of registered customers to suggest recommended dishes next time they visit. With little more time and effort, these additional features can be implemented surely. </p>
+
+<h1>
+<a id="note" class="anchor" href="#note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NOTE:</h1>
+
+<p>This project assumes you know how to load Operating system images on Raspberry Pi. If you are not sure how to do it, refer <a href="https://www.raspberrypi.org/documentation/installation/installing-images/linux.md">this.</a></p>
+
+<p>Don't forget to fork and try it out yourself!</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/kanugan">kanugan</a> can be found on <a href="https://github.com/kanugan/POS-system-with-Raspberry-Pi">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
